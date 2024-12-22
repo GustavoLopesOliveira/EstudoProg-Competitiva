@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
 
+//Acertei , vamo que vamo >:)
+
 int main(){
+    //Tamanho String e entradas
     int n;
 
     cin >> n;
@@ -12,10 +15,10 @@ int main(){
         cin >> s[i];
     }
 
-
+    //Condicoes iniciam verdadeiras, testam cada um e dps vira falso
     bool condicao1 = true, condicao2 = true;
 
-    for(int i = 0; i < (n+1)/2 - 2; i++){
+    for(int i = 0; i < (n+1)/2  - 1; i++){
         if(s[i] != '1'){
             condicao1 = false;
         }
