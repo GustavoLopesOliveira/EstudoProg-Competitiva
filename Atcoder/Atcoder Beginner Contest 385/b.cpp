@@ -24,32 +24,32 @@ int main(){
     for (int k = 0; k < str.size(); k++){
         if (str[k] == 'L'){
             if (mat[x-1][y - 1 -1] != '#'){
-                if (mat[x][y - 1] == '@'){
-                    casas.insert({x, y - 1});
+                if (mat[x-1][y - 1 -1] == '@'){
+                    casas.insert({x-1, y - 1 -1});
                 }
                 y = y - 1;
             }
         }
         else if (str[k] == 'R'){
             if (mat[x-1][y + 1-1] != '#'){
-                if (mat[x][y + 1] == '@'){
-                    casas.insert({x, y + 1});
+                if (mat[x-1][y + 1 -1] == '@'){
+                    casas.insert({x-1, y + 1 -1});
                 }
                 y = y + 1;
             }
         }
         else if (str[k] == 'D'){
             if (mat[x + 1-1][y-1] != '#'){
-                if (mat[x + 1][y] == '@'){
-                    casas.insert({x + 1, y});
+                if (mat[x + 1-1][y-1] == '@'){
+                    casas.insert({x + 1 -1, y-1});
                 }
                 x = x + 1; 
             }
         }
         else if(str[k] == 'U'){
             if (mat[x - 1-1][y-1] != '#'){
-                if (mat[x - 1][y] == '@'){
-                    casas.insert({x - 1, y});
+                if (mat[x - 1-1][y-1] == '@'){
+                    casas.insert({x - 1-1, y-1});
                 }
                 x = x - 1;
             }
