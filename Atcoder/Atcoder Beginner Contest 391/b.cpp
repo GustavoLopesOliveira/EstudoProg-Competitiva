@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int n,m; cin >> n >> m;
+
+     char s[n][n];
+
+     for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            cin >> s[i][j];
+        }
+     }
+
+     char t[m][m];
+
+     for(int i = 0; i < m; i++){
+        for(int j = 0; j <  m; j++){
+            cin >> t[i][j];
+        }
+     }
+
+     pair<int,int> saida;
+
+     for(int i = 0; i < m; i++){
+        for(int j = 0; j <  m; j++){
+            if()
+        }
+     }
+
+
+     cout << saida.first << " " << saida.second << endl;
+
+
+}
