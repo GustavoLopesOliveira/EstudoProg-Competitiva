@@ -5,15 +5,16 @@ using namespace std;
 int main(){
     int n, q; cin >> n >> q;
 
-    vector<int> ninhos(n,1);
+    vector<int> ninhos(n);
+
+    for(int i= 0; i < n; i++) ninhos[i] = i + 1;
 
     while(q--){
         int query; cin >> query;
         
         if(query == 1){
             int p,h; cin >> p >> h;
-            ninhos[p-1]--;
-            ninhos[h-1]++;
+            ninhos[p-1]; 
 
         }else{
             int cont = 0;
