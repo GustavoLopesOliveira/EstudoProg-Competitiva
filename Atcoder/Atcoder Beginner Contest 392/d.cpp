@@ -15,7 +15,9 @@ int main(){
         }
     }
 
-    double prob;
+    double prob = -1;
+
+
 
 
     cout << prob << endl;
